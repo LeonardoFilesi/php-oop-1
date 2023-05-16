@@ -13,10 +13,11 @@
             $this->genres = $_genres;
         }
 
+        
         public function pushDetails()
         {
             echo " Il titolo del film è:" . $this->title . "<br>" ;
             echo "I generi sono:" . implode('','', $this->genres) . "<br>" ;
-            echo "Anno di rilascio:" . this->year . "<br>" ;
+            echo "Anno di rilascio:" . $this->year . "<br>" ;
         }
     }

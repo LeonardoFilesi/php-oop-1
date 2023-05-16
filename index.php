@@ -1,7 +1,6 @@
 <?php
     include_once __DIR__ . '/models/movies.php';
     include_once __DIR__ . '/models/database.php';
-    include_once __DIR__ . '/models/genres.php';
 ?>
 
 <!DOCTYPE html>
@@ -19,8 +18,12 @@
     
     <main>
         <ul>
-            <li></li>
-            <li></li>
+            <?php foreach ($movies as $movie) { ?>
+                    <li>
+                        <?php $movie->pushDetails(); ?>
+                    </li>
+
+                <?php } ?>
         </ul>
     </main>
 </body>
